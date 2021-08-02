@@ -1,0 +1,2 @@
+chrome.exe,Code.exe,javaw.exe
+10

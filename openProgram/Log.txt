@@ -1,0 +1,40 @@
+
+2021-08-01 21:39:32 Program Started
+2021-08-01 21:39:38 Chrome Opened2021-08-01 21:39:52 Chrome open for 9
+2021-08-01 21:39:52 Chrome Closed
+2021-08-01 21:39:56 Chrome Opened2021-08-01 21:39:57 Chrome open for 1
+2021-08-01 21:39:57 Chrome Closed
+2021-08-01 21:39:59 Chrome Opened2021-08-01 21:40:01 Chrome open for 1
+2021-08-01 21:40:01 Chrome Closed
+2021-08-01 21:40:03 Chrome Opened2021-08-01 21:40:08 Chrome open for 3
+2021-08-01 21:40:08 Chrome Closed
+2021-08-01 21:40:10 Chrome Opened2021-08-01 21:40:14 Chrome open for 3
+2021-08-01 21:40:14 Chrome Closed
+2021-08-01 21:40:16 Chrome Opened2021-08-01 21:40:18 Chrome open for 1
+2021-08-01 21:40:18 Chrome Closed
+2021-08-01 21:40:21 Chrome Opened2021-08-01 21:40:23 Chrome open for 1
+2021-08-01 21:40:23 Chrome Closed
+2021-08-01 21:40:25 Chrome Opened2021-08-01 21:40:28 Chrome open for 2
+2021-08-01 21:40:28 Chrome Closed
+2021-08-01 21:40:38 Chrome Opened2021-08-01 21:40:41 Chrome open for 2
+2021-08-01 21:40:41 Chrome Closed
+2021-08-01 21:40:52 Chrome Opened2021-08-01 21:40:54 Chrome open for 1
+2021-08-01 21:40:54 Chrome Closed
+2021-08-01 21:55:12 Program Started
+2021-08-01 21:55:14 Chrome Opened
+2021-08-01 21:56:08 Program Started
+2021-08-01 21:56:09 Chrome Opened
+2021-08-01 21:57:07 Program Started
+2021-08-01 21:57:09 Chrome Opened
+2021-08-01 21:57:41 Program Started
+2021-08-01 21:57:42 Chrome Opened
+2021-08-02 08:08:45 Program Started
+2021-08-02 08:08:51 Chrome Opened
+2021-08-02 09:03:15 Program Started
+2021-08-02 09:03:16 Chrome Opened
+2021-08-02 09:16:09 Program Started
+2021-08-02 09:16:28 Program Started
+2021-08-02 09:17:27 Program Started
+2021-08-02 09:17:29 Chrome Opened
+2021-08-02 09:18:02 Program Started
+2021-08-02 09:18:04 Chrome Opened

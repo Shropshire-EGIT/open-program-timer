@@ -11,7 +11,7 @@ logFileName = 'programTimeLog.txt'
 configFileName = 'config.txt'
 
 with open(logFileName, 'a') as openFile:
-    writeStr = '\n' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + ' Program Started'
+    writeStr = '\n' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + ' Watcher Started'
     
     openFile.write(writeStr)
     openFile.close()
@@ -20,14 +20,14 @@ with open(configFileName, 'r') as reader:
     step = 0 # a counter for how many lines have been read
     for line in reader:
         if step == 0: # if the line being read is the first line
-            watchPrograms = line.split(',')
+            watchProgram = line.split(',')[0]
         
         if step == 1:
             timeIncrement = int(line) * 60
 
         step += 1
 
-print(watchPrograms)
+print(watchProgram)
 
 
 while True:
@@ -44,23 +44,23 @@ while True:
         except psutil.AccessDenied:
             pass
     
-    if "chrome.exe" in processList: # checks if the program is running
+    if watchProgram in processList: # checks if the program is running
         timeOpen += 1
 
         if Open == False:
-            writeStr = '\n' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + ' Chrome Opened'
+            writeStr = '\n' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + watchProgram + ' Opened'
             openFile.write(writeStr)
             Open = True
         
         if timeOpen%timeIncrement == 0:
-            writeStr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + ' Chrome open for ' + str(timeOpen)
+            writeStr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + watchProgram + ' open for ' + str(timeOpen)
             openFile.write(writeStr)            
 
     else: 
         if Open == True:
-            writeStr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + ' Chrome open for ' + str(timeOpen)
+            writeStr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + watchProgram + ' open for ' + str(timeOpen)
             openFile.write(writeStr)
-            writeStr = '\n' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + ' Chrome Closed'
+            writeStr = '\n' + time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())) + watchProgram + ' Closed'
             openFile.write(writeStr)
             
             timeOpen = 0
